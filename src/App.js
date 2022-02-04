@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderComponent from './firstProject/headerComponent/header';
+import GridComponent from './firstProject/gridComponent/grid';
+import Navbar from './firstProject/navbarComponant/navbar';
+import Footer from './firstProject/footerComponent/footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        <HeaderComponent /> 
+        <Navbar />
+        <GridComponent />
+       <Footer />
+
+    </>
+  )
 }
 
 export default App;

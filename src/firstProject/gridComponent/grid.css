@@ -1,0 +1,52 @@
+.home--section{
+    padding: 1rem .5rem;
+}
+.home--grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 350px);
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+  width: 1220px;
+  margin: 10px auto;
+}
+.item{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: .3rem;
+}
+.bookmark{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    font-size: 1.4rem;
+    transition: .5s linear opacity;
+    opacity: 0;
+}
+.arrow-outline{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-size: 1.4rem;
+    transition: .5s linear opacity;
+    opacity: 0;
+}
+.item:hover .arrow-outline{
+    opacity: 1; 
+}
+.item:hover .bookmark{
+    opacity: 1; 
+}
+.item:hover img{
+    transform: scale(1.07);
+}
+.item img{
+    width: 390px;
+    transition: .5s linear transform;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-item2{
+    grid-row: span 2;
+}
